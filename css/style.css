@@ -1,0 +1,376 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+aside {
+    background-color: white;
+}
+
+main {
+    background-color: green;
+    padding: 50px 0 0 50px;
+}
+
+.flex {
+    display: flex;
+}
+
+aside {
+    width: 400px;
+    height: 200vh;
+}
+
+header {
+    width: calc(100vw - 400px);
+    height: 12.5vh;
+    background-color: #ededed;
+    position: relative;
+}
+
+main {
+    width: calc(105vw - 400px);
+    height: calc(105.5vh - 200px);
+    background-color: white;
+    overflow-y: scroll;
+}
+
+footer {
+    background-color: #ededed;
+    width: calc(100vw - 400px);
+    height: 100px;
+    position: relative;
+
+}
+
+/* Stilizzazione A side */
+.profile {
+    background-color: #ededed;
+    width: 400px;
+    height: 12.5vh;
+    position: relative;
+    border-right: 1px solid #ededed;
+}
+
+.menu-aside {
+    position: absolute;
+    left: 260px;
+    bottom: 40px;
+}
+
+.fa-bell-slash {
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+
+.user, .desktop-notifications {
+    background-color: white;
+    width: 400px;
+    height: 12.5vh;
+    border: 1px solid #ededed;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.notification {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-id {
+    display: flex;
+    flex-direction: column;
+    margin-left: -15px;
+}
+
+.user {
+    position: relative;
+}
+
+.users {
+    /* overflow-y: scroll; */
+}
+
+.time {
+   position: absolute;
+   left: 300px;
+}
+
+p {
+    margin-left: 30px;
+    font-size: 15px;
+}
+
+small {
+    margin-left: 30px;
+}
+
+#search {
+    background-color: white;
+    width: 400px;
+    height: 12.5vh;
+    border: 1px solid #ededed;
+    padding: 20px black;
+}
+
+.form-control {
+    height: 100%;
+}
+
+i {
+    font-size: 25px;
+    padding-top: 15px;
+    margin-left: 15px;
+}
+
+.fa-user-circle {
+    font-size: 30px;
+}
+
+/* Stilizzazione header */
+
+.user-menu-right {
+    position: absolute;
+    right: 40px;
+    top: 5px;
+}
+
+.user-menu-right i {
+    font-size: 25px;
+}
+
+.my-profile i {
+    font-size: 30px;
+}
+
+.user-menu small{
+    margin-left: 30px;
+    font-size: 15px;
+}
+
+/* Stilizzazione main */
+
+.received p {
+    display: flex;
+    flex-direction: column;
+}
+
+.sent  {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+/* * Chat */ */
+.chats {
+    height: calc(100% - 120px);
+    background-size: contain;
+    overflow-y: scroll;
+    padding-top: 30px;
+}
+
+.chat-text {
+    display: flex;
+    align-items: center;
+}
+
+.chat-text-end {
+    justify-content: flex-end;
+}
+
+.chat-text-start {
+    justify-content: flex-start;
+}
+
+.chat-sent,
+.chat-received {
+    max-width: 40%;
+    padding: 3px 10px 5px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-right:70px;
+    margin-left: -10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-sent {
+    background-color: #007fff;
+}
+
+.chat-received {
+    background-color: lightgreen;
+}
+
+.chat-text p {
+    font-size: 15px;
+    color: #252525;
+}
+
+.chat-text small {
+    font-size: 11px;
+    color: #999999;
+    align-self: flex-end;
+    margin-top: -10px;
+}
+
+.chat-text,.chat-text-end small {
+    color: white;
+}
+
+.chat-text,.chat-text-end p {
+    color: white;
+}
+
+
+.chat-text,.chat-text-start small {
+    color: white;
+}
+
+.chat-text,.chat-text-start p {
+    color: white;
+}
+
+/* Stilizzazione footer */
+
+
+
+.right {
+	position: relative;
+}
+.right .right-messages-container {
+	width: 100%;
+	height: calc(100% - 70px - 70px);
+}
+.right .right-messages {
+	display: none;
+	height: 100%;
+	width: 100%;
+	padding: 5% 10%;
+	overflow-y: scroll;
+}
+.right .right-messages.active {
+	display: block;
+}
+.right .right-messages .message {
+	position: relative;
+	margin: 5px 0;
+	padding: 15px 15px 20px 15px;
+	min-width: 20%;
+	max-width: 60%;
+	background: #fff;
+	border-radius: 10px;
+	font-size: 15px;
+}
+.right .right-messages .message::after {
+	content: '';
+	display: table;
+	overflow: hidden;
+	clear: both;
+}
+.right .right-messages .message:hover .message-options, .right .right-messages .message .message-options.active {
+	display: block;
+}
+.right .right-messages .message .message-options {
+	display: none;
+	color: #B6B9BB;
+	cursor: pointer;
+}
+.right .right-messages .message .message-options-panel {
+	display: none;
+	position: absolute;
+	bottom: -75px;
+	width: 150px;
+	height: 80px;
+	background: white;
+	box-shadow: 0px 0px 40px -15px rgba(0,0,0,0.75);
+}
+.right .right-messages .message.sent .message-options-panel {
+	right: 0;
+}
+.right .right-messages .message.received .message-options-panel {
+	left: 0;
+}
+.right .right-messages .message .message-options-panel.active {
+	display: block;
+}
+.right .right-messages .message .message-options-panel > div {
+	cursor: pointer;
+	width: 100%;
+	height: 50%;
+	line-height: 40px;
+	font-size: 14px;
+	text-align: center;
+}
+.right .right-messages .message .message-options-panel > div:hover {
+	color: lightgreen;
+}
+
+.right .right-messages .message .message-text {
+	color: black;
+}
+
+
+.right .right-messages .message .message-time {
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+	font-size: 10px;
+	color: white;
+}
+.right .right-messages .message.received {
+	background: #007fff;
+	float:left;
+	clear:both;
+}
+.right .right-messages .message.sent {
+	background: #D5F9BA;
+	float: right;
+	clear:both;
+}
+.right .right-footer {
+	background-color: #F3EEEA;
+	width: 100%;
+	height: 70px;
+}
+
+.fa-smile  {
+    /* position: absolute;
+    bottom: 0px; */
+    padding-right: 10px;
+}
+.right .right-footer .new-message-inputs {
+	/* width: 80%; */
+	/* height: 50px; */
+	/* margin: 10px 0;
+	padding: 15px;
+	border: 0;
+	border-radius: 5px;
+	font-size: 14px;
+	font-weight: lighter; */
+    /* padding-top: 0px; */
+   padding-left: 20px;
+   width: 85%;
+   top: 10px;
+}
+.right .right-footer .right-footer-icon {
+	/* width: 10%;
+	height: 100%;
+	line-height: 70px;
+	text-align: center;
+	font-size: 25px;
+	color: #6B7376; */
+    position: absolute;
+    right: 50px;
+    top: 5px;
+}

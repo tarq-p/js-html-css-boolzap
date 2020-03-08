@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="js/main.js" charset="utf-8"></script>
+</head>
+
+<body>
+    <div class="">
+        <div class="flex">
+            <aside>
+                <div class="profile">
+                    <a href=""><i class="fas fa-user"></i></a>
+                    <div class="menu-aside">
+                        <a href="#"><i class="fas fa-circle-notch"></i></a>
+                        <a href="#"><i class="far fa-envelope"></i></a>
+                        <a href="#"> <i class="fas fa-ellipsis-v"></i></a>
+                    </div>
+                </div>
+                <div class="desktop-notifications">
+                    <a href=""><i class="fas fa-bell-slash"></i></a>
+                    <div class="notification">
+                        <p>New Updates</p>
+                        <a href="#"><small>Enable Notifications</small></a>
+                    </div>
+                </div>
+                <div class="search">
+                    <input id="search" type="text" placeholder="Search" aria-label="Search">
+                </div>
+                <div class="users">
+                    <div class="user">
+                        <a href="#"><i class="fas fa-user-circle"></i></a>
+                        <div class="notification">
+                            <p id="nome">Piero Rossi</p>
+                            <small>Arrivo!</small>
+                        </div>
+                        <p class="time">17:00</p>
+                    </div>
+                    <div class="user">
+                        <a href="#"><i class="far fa-user-circle"></i></a>
+                        <div class="notification">
+                            <p id="nome">Giovanni Verdi</p>
+                            <small>Domani pizza?</small>
+                        </div>
+                        <p class="time">15:00</p>
+                    </div>
+                    <div class="user">
+                        <a href="#"><i class="fas fa-user-circle"></i></a>
+                        <div class="notification">
+                            <p id="nome">Marco Grigio</p>
+                            <small>Ok!</small>
+                        </div>
+                        <p class="time">12:00</p>
+                    </div>
+                    <div class="user">
+                        <a href="#"><i class="fas fa-user-circle"></i></a>
+                        <div class="notification">
+                            <p id="nome">Andrea Giallo</p>
+                            <small>Marco ha una nuova tipa</small>
+                        </div>
+                        <p class="time">10:30</p>
+                    </div>
+                    <div class="user">
+                        <a href="#"><i class="far fa-user-circle"></i></a>
+                        <div class="notification">
+                            <p id="nome">Antonio Marrone</p>
+                            <small>Ci sei?</small>
+                        </div>
+                        <p class="time">10:00</p>
+                    </div>
+                    <div class="user">
+                        <a href="#"><i class="far fa-user-circle"></i></a>
+                        <div class="notification">
+                            <p id="nome">Alessandro Verdi</p>
+                            <small>Ci sei?</small>
+                        </div>
+                        <p class="time">10:00</p>
+                    </div>
+                </div>
+            </aside>
+            <div class="right">
+                <header>
+                    <div class="user-menu">
+                        <div class="my-profile">
+                            <a href="#"><i class="far fa-user-circle"></i></a>
+                            <div class="profile-id">
+                                <small>Piero</small>
+                            </div>
+                        </div>
+                        <div class="user-menu-right">
+                            <a href="#"><i class="fa fa-fw fa-search"></i></a>
+                            <a href="#"><i class="fas fa-unlink"></i></a>
+                            <a href="#"><i class="fa fa-fw fa-user"></i></a>
+                        </div>
+                    </div>
+                </header>
+                <main>
+                    <div class="right-messages-container" >
+                        <div class="right-messages active" data-conversazione="0">
+                        </div>
+                        <div class="right-messages" data-conversazione="1">
+                        </div>
+                        <div class="right-messages" data-conversazione="2">
+                        </div>
+                        <div class="right-messages" data-conversazione="3">
+                        </div>
+                        <div class="right-messages" data-conversazione="4">
+                        </div>
+                        <div class="right-messages" data-conversazione="5">
+                        </div>
+                        <div class="right-messages" data-conversazione="6">
+                        </div>
+                        <div class="right-messages" data-conversazione="7">
+                        </div>
+                    </div>
+                </main>
+                <footer>
+                    <div class="right-footer">
+                            <i class="far fa-smile"></i>
+                        <input class="new-message-inputs" placeholder="Scrivi un messaggio">
+                        <div class="right-footer-icon f-right">
+                            <i class="fa fa-microphone" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <div class="template">
+        <div class="message">
+            <span class="message-text">Inserisci il messaggio con js</span>
+            <i class="fa fa-chevron-down f-right message-options"></i>
+            <span class="message-time">17:31</span>
+            <div class="message-options-panel">
+                <div class="message-info">Info messaggio</div>
+                <div class="message-destroy">Cancella messaggio</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>
