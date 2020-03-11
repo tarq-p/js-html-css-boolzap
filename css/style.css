@@ -344,6 +344,10 @@ i {
 	height: 70px;
 }
 
+.new-message-inputs {
+    font-size: 20px;
+}
+
 .fa-smile  {
     padding-right: 10px;
 }
@@ -352,8 +356,13 @@ i {
    width: 85%;
    top: 10px;
 }
-.right .right-footer .right-footer-icon {
+
+.fa-microphone {
     position: absolute;
-    right: 50px;
-    top: 5px;
+    right:50px;
+    top:5px;
+}
+
+.right-messages small {
+    font-size: 25px;
 }

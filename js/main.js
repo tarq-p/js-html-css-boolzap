@@ -58,5 +58,13 @@ $(document).ready(function() {
        })
    });
 
+ $('.user').click(function() {
+     $('.user').removeClass('active');
+     $(this).addClass('active');
+     dataUtente = $(this).data('conversazione');
+     var chatCorrispondente = $('.right-messages[data-conversazione="' + dataUtente + '"]');
+     $('.right-messages').removeClass('active');
+     chatCorrispondente.addClass('active');
+ });
 
-});
+})
