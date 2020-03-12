@@ -366,3 +366,9 @@ i {
 .right-messages small {
     font-size: 25px;
 }
+
+.fa-paper-plane {
+    position: absolute;
+    right:50px;
+    top:5px;
+}

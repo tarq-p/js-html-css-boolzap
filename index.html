@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.3/handlebars.min.js" charset="utf-8"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="js/main.js" charset="utf-8"></script>
 </head>
 <body>
     <div class="">
@@ -105,20 +105,20 @@
                     <div class="right-messages-container" >
                         <div class="right-messages active" data-conversazione="0">
                             <div class="right-messages-template">
-                                <small>ci sei</small>
+                                <!-- <small>ci sei</small> -->
                             </div>
                         </div>
                         <div class="right-messages" data-conversazione="1">
-                            <small>Domani Pizza?</small>
+                            <!-- <small>Domani Pizza?</small> -->
                         </div>
                         <div class="right-messages" data-conversazione="2">
-                            <small>Ok!</smal>
+                            <!-- <small>Ok!</smal> -->
                         </div>
                         <div class="right-messages" data-conversazione="3">
                             <small>Marco Ha una nuova tipa</smal>
                         </div>
                         <div class="right-messages" data-conversazione="4">
-                            <small>Ci sei?</smal>
+                            <!-- <small>Ci sei?</smal> -->
                         </div>
                     </div>
                 </main>
@@ -145,5 +145,24 @@
             </div>
         </div>
     </div>
+
+    <!-- <script id="messaggio-template" type="text/x-handlebars-template">
+
+    <div class="template">
+        <div class="message">
+            <span class="message-text">Inserisci il messaggio con js</span>
+            <i class="fa fa-chevron-down f-right message-options"></i>
+            <span class="message-time">17:31</span>
+            <div class="message-options-panel">
+                <div class="message-info">Info messaggio</div>
+                <div class="message-destroy">Cancella messaggio</div>
+            </div>
+        </div>
+    </div> -->
+
+	</script>
+
+<script src="js/main.js" charset="utf-8"></script>
+
 </body>
 </html>

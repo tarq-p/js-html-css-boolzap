@@ -24,9 +24,9 @@ $(document).ready(function() {
                creaMsg(testoMessaggio, 'sent');
                scroll();
                setTimeout(function() {
-                    creaMsg('ok', 'received');
+                    creaMsg('ciao', 'received');
                     scroll();
-               }, 2000);
+               }, 1000);
           }
      }
 
@@ -35,9 +35,10 @@ $(document).ready(function() {
           var templateMessaggio = $('.template .message').clone();
           templateMessaggio.children('.message-text').text(testoMsg);
           templateMessaggio.addClass(sentReceived);
+          templateMessaggio.children('.message-time').text(currentTime);
+          templateMessaggio.addClass(sentReceived);
           $('.right-messages.active').append(templateMessaggio);
      }
-
 
 
      function scroll() {
@@ -66,5 +67,11 @@ $(document).ready(function() {
      $('.right-messages').removeClass('active');
      chatCorrispondente.addClass('active');
  });
+
+ function currentTime() {
+        var hourMinute = new Date().getHours() + ':' + new Date().getMinutes();
+        return hourMinute;
+    }
+
 
 })
