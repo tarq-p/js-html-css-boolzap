@@ -35,7 +35,9 @@ header {
     position: relative;
 }
 
+
 main {
+    background-image:
     width: calc(105vw - 400px);
     height: calc(105.5vh - 200px);
     background-color: white;
@@ -62,7 +64,7 @@ footer {
 .menu-aside {
     position: absolute;
     left: 260px;
-    bottom: 40px;
+    bottom: 30px;
 }
 
 .fa-bell-slash {
@@ -81,10 +83,22 @@ footer {
     align-items: center;
 }
 
+.users img {
+    width: 65px;
+    height: 65px;
+}
+
+.desktop-notifications {
+    background-color: #8edafc;
+}
 
 .notification {
     display: flex;
     flex-direction: column;
+}
+
+.notification small {
+    color: white;
 }
 
 .profile-id {
@@ -149,13 +163,20 @@ i {
     font-size: 25px;
 }
 
-.my-profile i {
-    font-size: 30px;
+.profile img {
+    width: 65px;
+    height: 65px;
 }
 
 .user-menu small{
     margin-left: 30px;
     font-size: 15px;
+}
+
+.my-profile img {
+    width: 65px;
+    height: 65px;
+    margin-left: 10px;
 }
 
 /* Stilizzazione main */
